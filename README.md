@@ -5,8 +5,6 @@
 - 🤖 Convertir imagen a sticker
 - 🏦 Generador de BINs aleatorio
 - 🌐 Conexión y administración de servidore VPS 
-- 🔐 Sección de VPN con conexión SSH integrada
-- 🎨 Interfaz inspirada en el diseño de GitHub
 
 ## 📂 Estructura del Proyecto
 ```
@@ -19,7 +17,11 @@
 ## ⚙️ Instalación
 1. Clona este repositorio:
    ```sh
-   git clone https://github.com/bySupremTX/proyecto-supremtx.git
+   git clone https://github.com/Suprem-TX/BotSuprem-TX.git
+   ```
+   1. Entra a la carpeta:
+   ```sh
+   cd BotSuprem-TX
    ```
 2. Instala las dependencias:
    ```sh
