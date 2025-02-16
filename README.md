@@ -89,20 +89,6 @@
    node index.js
    ```
 
-## 🤝 Contribuciones
-¡Las contribuciones son bienvenidas! Si quieres colaborar, por favor sigue estos pasos:
-1. Haz un fork del repositorio 🍴
-2. Crea una rama nueva (`git checkout -b feature-nueva`)
-3. Realiza tus cambios y haz un commit (`git commit -m 'Añadir nueva funcionalidad'`)
-4. Haz un push a la rama (`git push origin feature-nueva`)
-5. Abre un Pull Request 🚀
-
-## 📜 Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más información.
-
-## 📞 Contacto
-📩 **bySupremTX** - [GitHub](https://github.com/bySupremTX) | [Telegram](https://t.me/bySupremTX)
-
 ---
-💖 ¡Si te gusta este proyecto, dale una estrella ⭐ y sígueme para más contenido! 🚀
+💖 ¡Si te gusta este proyecto, dale una estrella ⭐
 
