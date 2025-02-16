@@ -44,16 +44,19 @@
    ```
 3. Instala las librearias:
    ```sh
-   pip install whatsapp-web.js
+   npm install
    ```
    ```sh
-   pip install qrcode-terminal
+   npm install whatsapp-web.js
    ```
    ```sh
-   pip install sharp
+   npm install qrcode-terminal
    ```
    ```sh
-   pip install axios
+   npm install sharp
+   ```
+   ```sh
+   npm install axios
    ```
    
 ## 📜 Uso
