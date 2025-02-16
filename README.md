@@ -5,9 +5,9 @@
 - 🤖 Convertir imagen a sticker
 - 🏦 Generador de BINs aleatorio
 - 🌐 Conexión y administración de servidore VPS
-- ⛓️‍💥 Envia archivos con extencion .dark (editable) modificas o añade el directorio
-- 💻 Envia apps de extencion `xapk` y `apk`
+- ⛓️‍💥 Envia archivos con extencion .dark hc (editable) modificas o añade el directorio
 - 💎 Simulacion de liveo y check de un bin
+- 🀄 Elimina todo tipo de links
 
 ## 📂 Estructura del Proyecto
 ```
@@ -15,8 +15,7 @@
     ├── 📜 index.js         # Iniciador
     ├── 📜 package.json     # Dependencias
 📁 img/                 # Imagenes (editables)
-📁 serv/                # Archivos con extencion `dark`
-📁 apps/                # Aplicaciones extencion `xapk-apk`
+📁 serv/                # Archivos con extencion .dark .hc
 ```
 
 ## ⚙️ Instalación
