@@ -5,7 +5,7 @@ Este bot no tiene restriccion lo cual significa que todos lo pueden usar, la ver
 
 No es codigo abierto
 
-## ⚠️ RECOMENDACIONES ⚠️
+## 🔰 RECOMENDACIONES 🔰
 Para hacer que el Bot funcione con exito utiliza sistema Debian 12 o Ubuntu 20-24
 
 ## 🚀 Características
