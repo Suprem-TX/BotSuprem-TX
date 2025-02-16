@@ -1,5 +1,7 @@
 # 🚀 Bot de WhatsApp
 
+## ⚠️ ADVERTENCIA ⚠️
+Este bot no tiene restriccion lo cual significa que todos lo pueden usar, la vercion pro esta en proceso
 
 ## 🚀 Características
 - 🤖 Convertir imagen a sticker
@@ -8,6 +10,7 @@
 - ⛓️‍💥 Envia archivos con extencion .dark hc (editable) modificas o añade el directorio
 - 💎 Simulacion de liveo y check de un bin
 - 🀄 Elimina todo tipo de links
+- ⚡ Da la bienvenida y despedida
 
 ## 📂 Estructura del Proyecto
 ```
