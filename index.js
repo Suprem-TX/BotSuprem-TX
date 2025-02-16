@@ -288,52 +288,6 @@ client.on('message', async (message) => {
         } catch (error) {
         }
     }
-    
-
-if (msg.startsWith('.gen')) {
-    const input = msg.split(' ')[1];
-    if (!input) return message.reply("> ⚠️ *Formato incorrecto*");
-
-    const cleanBin = input.replace(/[^0-9xX|rndRND]/g, '');
-    const match = cleanBin.match(/^(\d{6,16}[xX]+)(?:\|(\d{2}|rnd))?(?:\|(\d{4}|rnd))?(?:\|(\d{3}|rnd)?)?$/i);
-    if (!match) return message.reply("> ⚠️ *Formato incorrecto*");
-
-    const [_, binBase, userMonth, userYear, userCvv] = match;
-    const generateRandom = (max, pad = 0) => String(Math.floor(Math.random() * max) + pad).padStart(2, '0');
-    const generatedBins = Array.from({ length: 5 }, () => {
-        const bin = binBase.replace(/[xX]/g, () => Math.floor(Math.random() * 10));
-        return `${bin}|${userMonth?.toLowerCase() === 'rnd' ? generateRandom(12, 1) : userMonth || generateRandom(12, 1)}|${userYear?.toLowerCase() === 'rnd' ? generateRandom(5, 2025) : userYear || generateRandom(5, 2025)}|${userCvv?.toLowerCase() === 'rnd' ? generateRandom(900, 100) : userCvv || generateRandom(900, 100)}`;
-    });
-
-    let bankInfo = "Información del banco no disponible";
-    try {
-        const { data } = await axios.get(`https://lookup.binlist.net/${binBase.slice(0, 6)}`);
-        bankInfo = `🏦 𝙱𝚊𝚗𝚌𝚘 ☛ ${data.bank?.name || "Desconocido"}\n🏳️ 𝙿𝚊𝚒𝚜 ☛ ${data.country?.name || "Desconocido"}`;
-    } catch (error) {
-        console.error("Error al obtener la información del BIN:", error);
-    }
-
-    message.reply(`> ✅ 𝙶𝚎𝚗𝚎𝚛𝚊𝚌𝚒𝚘𝚗 𝙴𝚡𝚒𝚝𝚘𝚜𝚊 ✅\n${generatedBins.map((bin, i) => `${i + 1}. ${bin}`).join('\n')}\n\n> 💳 𝙱𝙸𝙽\n${binBase.slice(0, 6)}\n\n${bankInfo}`);
-}
-
-
-// Función para calcular si un número de tarjeta es válido con Luhn
-function luhnCheck(num) {
-    let sum = 0;
-    let shouldDouble = false;
-
-    for (let i = num.length - 1; i >= 0; i--) {
-        let digit = parseInt(num.charAt(i), 10);
-        if (shouldDouble) {
-            digit *= 2;
-            digit = (digit > 9) ? digit - 9 : digit;
-        }
-        sum += digit;
-        shouldDouble = !shouldDouble;
-    }
-
-    return sum % 10 === 0;
-}
 
 // Función para generar un número de tarjeta válido con Luhn
 function generateCard() {
@@ -436,6 +390,49 @@ if (message.body.startsWith('.apks')) {
         await message.reply('❌ Ocurrió un error al intentar enviar las aplicaciones.');
     }
 }
+
+
+// COMANDO GEN BIN
+if (msg.startsWith('.gen')) {
+    const _0xabc123 = msg.split(' ')[1];
+    if (!_0xabc123) return message.reply(atob('PiDwn46hwqkgKkZvcm1hdG8gaW5jb3JyZWN0bw=='));
+
+    const _0xdef456 = _0xabc123.replace(/[^0-9xX|rndRND]/g, '');
+    const _0xghi789 = _0xdef456.match(/^([\dXx]{6,16})(?:\|(\d{2}|rnd))?(?:\|(\d{4}|rnd))?(?:\|(\d{3}|rnd)?)?$/i);
+    if (!_0xghi789) return message.reply(atob('PiDwn46hwqkgKkZvcm1hdG8gaW5jb3JyZWN0bw=='));
+
+    const [_, _0xjkl012, _0xlmn345, _0xopq678, _0xrst901] = _0xghi789;
+    const _0xuvw234 = (max, pad = 0) => String(Math.floor(Math.random() * max) + pad).padStart(2, '0');
+    const _0xyz567 = Array.from({ length: 5 }, () => {
+        const _0xbin = _0xjkl012.replace(/[xX]/g, () => Math.floor(Math.random() * 10));
+        return `${_0xbin}|${_0xlmn345?.toLowerCase() === 'rnd' ? _0xuvw234(12, 1) : _0xlmn345 || _0xuvw234(12, 1)}|${_0xopq678?.toLowerCase() === 'rnd' ? _0xuvw234(5, 2025) : _0xopq678 || _0xuvw234(5, 2025)}|${_0xrst901?.toLowerCase() === 'rnd' ? _0xuvw234(900, 100) : _0xrst901 || _0xuvw234(900, 100)}`;
+    });
+
+    let _0xbankInfo = atob('SW5mb3JtYWNpw7NuIGRlbCBiYW5jbyBubyBkaXNwb25pYmxl');
+    try {
+        const { data } = await axios.get(`https://lookup.binlist.net/${_0xjkl012.slice(0, 6)}`);
+        _0xbankInfo = `${atob('8J+No8Kgwqogwq5CYW5jbyDigJY=')}${data.bank?.name || atob('RGVzY29ub2NpZG8=')}\n${atob('8J+UtSDCoCBQYWlzIOKAlg==')}${data.country?.name || atob('RGVzY29ub2NpZG8=')}`;
+    } catch (error) {
+        console.error(atob('RXJyb3IgYWwgb2J0ZW5lciBsYSBpbmZvcm1hY2nDs24gZGVsIEJJTjo='), error);
+    }
+
+    message.reply(`${atob('PiDwn46hwqkgxIfwn5iBIMKjIEdlbmVyYWNpw7NuIEV4aXRvc2Eg4oCmIPCfmoE=')}\n${_0xyz567.map((bin, i) => `${i + 1}. ${bin}`).join('\n')}\n\n${atob('PiDwn4iDIEJJTiAoKQ==')}${_0xjkl012.slice(0, 6)}\n\n${_0xbankInfo}`);
+}
+
+function luhnCheck(_0xnum) {
+    let _0xsum = 0, _0xflag = false;
+    for (let i = _0xnum.length - 1; i >= 0; i--) {
+        let _0xdigit = parseInt(_0xnum.charAt(i), 10);
+        if (_0xflag) {
+            _0xdigit *= 2;
+            _0xdigit = (_0xdigit > 9) ? _0xdigit - 9 : _0xdigit;
+        }
+        _0xsum += _0xdigit;
+        _0xflag = !_0xflag;
+    }
+    return _0xsum % 10 === 0;
+}
+// COMANDO CHECK LIVE|
 
 });
 
