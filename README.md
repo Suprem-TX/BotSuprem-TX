@@ -4,7 +4,10 @@
 ## 🚀 Características
 - 🤖 Convertir imagen a sticker
 - 🏦 Generador de BINs aleatorio
-- 🌐 Conexión y administración de servidore VPS 
+- 🌐 Conexión y administración de servidore VPS
+- ⛓️‍💥 Envia archivos con extencion .dark (editable) modificas o añade el directorio
+- 💻 Envia apps de extencion `xapk` y `apk`
+- 💎 Simulacion de liveo y check de un bin
 
 ## 📂 Estructura del Proyecto
 ```
@@ -12,6 +15,8 @@
     ├── 📜 index.js         # Iniciador
     ├── 📜 package.json     # Dependencias
 📁 img/                 # Imagenes (editables)
+📁 serv/                # Archivos con extencion `dark`
+📁 apps/                # Aplicaciones extencion `xapk-apk`
 ```
 
 ## ⚙️ Instalación
@@ -39,17 +44,22 @@
    ```
 3. Instala las librearias:
    ```sh
-   pip install -r requirements.txt
+   pip install whatsapp-web.js
    ```
-
+   ```sh
+   pip install qrcode-terminal
+   ```
+   ```sh
+   pip install sharp
+   ```
+   ```sh
+   pip install axios
+   ```
+   
 ## 📜 Uso
 - Para iniciar el bot de WhatsApp:
    ```sh
-   python main.py
-   ```
-- Para generar BINs:
-   ```sh
-   python generator.py
+   node index.js
    ```
 
 ## 🤝 Contribuciones
