@@ -15,7 +15,18 @@
 ```
 
 ## ⚙️ Instalación
-1. Clona este repositorio:
+1. Instalar/Actualizar paquetes
+   ```sh
+   sudo apt update && apt upgrade -y
+   ```
+   ```sh
+   sudo apt install nodejs -y
+   ```
+   ```sh
+   sudo apt install npm -y
+   ```
+
+2. Clona este repositorio:
    ```sh
    git clone https://github.com/Suprem-TX/BotSuprem-TX.git
    ```
@@ -23,11 +34,10 @@
    ```sh
    cd BotSuprem-TX
    ```
-2. Instala las dependencias:
+3. Instala las librearias:
    ```sh
    pip install -r requirements.txt
    ```
-3. Ejecuta el bot o la aplicación según sea necesario.
 
 ## 📜 Uso
 - Para iniciar el bot de WhatsApp:
