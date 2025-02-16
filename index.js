@@ -4,7 +4,6 @@ const { Client, MessageMedia, LocalAuth } = require('whatsapp-web.js');  // Impo
 const sharp = require('sharp');
 const qrcode = require('qrcode-terminal');
 const axios = require('axios'); // Para hacer solicitudes HTTP
-const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 
 
 const client = new Client({
@@ -49,7 +48,7 @@ client.on('group_join', async (notification) => {
 ╰✯───────•••───────✯
 `;
 
-        const imagePath = '/root/SupremBot/img/bienvenida.jpg';  // Imagen de bienvenida
+        const imagePath = '/root/BotSuprem-TX/img/bienvenida.jpg';  // Imagen de bienvenida
         const welcomeImage = await MessageMedia.fromFilePath(imagePath);
 
         // Enviar el mensaje con la imagen y el texto
@@ -73,7 +72,7 @@ client.on('group_leave', async (notification) => {
 ╰✯───────•••───────✯`;
 
     // Ruta de la imagen de fondo de despedida
-    const imagePath = '/root/SupremBot/img/despedida.jpg';  // Cambia a la ruta de tu imagen de fondo de despedida
+    const imagePath = '/root/BotSuprem-TX/img/despedida.jpg';  // Cambia a la ruta de tu imagen de fondo de despedida
 
     try {
         // Cargar la imagen de despedida
@@ -152,7 +151,7 @@ client.on('message', async (message) => {
 ├𝙴𝚜𝚝𝚎 𝙱𝚘𝚝 𝚋𝚘𝚛𝚛𝚊 𝚌𝚞𝚊𝚕𝚚𝚞𝚒𝚎𝚛 𝚕𝚒𝚗𝚔
 ╰✯───────•••───────✯`;
     
-        const media = MessageMedia.fromFilePath('/root/SupremBot/img/menu.png');
+        const media = MessageMedia.fromFilePath('/root/BotSuprem-TX/img/menu.png');
         await client.sendMessage(message.from, media, { caption: infoText });
     }
     
@@ -169,7 +168,7 @@ client.on('message', async (message) => {
 ├ t.me/SupremTX1
 ╰✯───────•••───────✯`;
     
-        const media = MessageMedia.fromFilePath('/root/SupremBot/img/info.png');
+        const media = MessageMedia.fromFilePath('/root/BotSuprem-TX/img/info.png');
         await client.sendMessage(message.from, media, { caption: infoText });
     }
     
@@ -256,7 +255,7 @@ client.on('message', async (message) => {
 
 
     if (message.body.startsWith('.servers')) {
-        const directoryPath = '/root/SupremBot/serv/';
+        const directoryPath = '/root/BotSuprem-TX/serv/';
         try {
             const files = fs.readdirSync(directoryPath);
             
@@ -270,7 +269,7 @@ client.on('message', async (message) => {
             const media = MessageMedia.fromFilePath(imagePath);
     
             // Envía el mensaje junto con la imagen
-            await client.sendMessage(message.from, media, { caption: `*Servidores para la aplicación*\n\n> DarkTunnel\n\n> Se recomienda descargarla en la Play Store` });
+            await client.sendMessage(message.from, media, { caption: `*Archivos enviandos`});
             
             for (const file of files) {
                 const filePath = path.join(directoryPath, file);
@@ -408,11 +407,11 @@ if (message.body.startsWith('.live')) {
     }
 }
 
-if (message.body.startsWith('.dark')) {
+if (message.body.startsWith('.apks')) {
     try {
         // Rutas de los archivos (Cambia estas rutas con las correctas)
-        const xapkPath = '/root/SupremBot/apks/DarkTunnel_SSH-TUNNEL.xapk';
-        const apkPath = '/root/SupremBot/apks/ZArchiver.apk';
+        const xapkPath = '/root/SupremBot/apps/DarkTunnel_SSH-TUNNEL.xapk';
+        const apkPath = '/root/SupremBot/apps/ZArchiver.apk';
 
         // Verifica si los archivos existen antes de enviarlos
         if (!fs.existsSync(xapkPath) || !fs.existsSync(apkPath)) {
