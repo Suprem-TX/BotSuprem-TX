@@ -58,8 +58,32 @@
    ```sh
    npm install axios
    ```
-   
-## 📜 Uso
+   ```sh
+    sudo apt install -y \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libglib2.0-0 \
+    libnss3 \
+    libxss1 \
+    libasound2 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxi6 \
+    libxtst6 \
+    libxrandr2 \
+    libcups2 \
+    libdbus-1-3 \
+    libgtk-3-0 \
+    libxss1 \
+    libpango1.0-0 \
+    libgdk-pixbuf2.0-0 \
+    libharfbuzz0b \
+    fonts-liberation \
+    libgbm1 \
+    libatk1.0-0
+    ```
+## 📜 EJECUCION
 - Para iniciar el bot de WhatsApp:
    ```sh
    node index.js
