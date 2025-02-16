@@ -20,6 +20,9 @@
    sudo apt update && apt upgrade -y
    ```
    ```sh
+   sudo apt install git -y
+   ```
+   ```sh
    sudo apt install nodejs -y
    ```
    ```sh
