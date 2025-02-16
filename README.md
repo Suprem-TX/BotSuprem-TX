@@ -2,6 +2,7 @@
 
 ## ⚠️ ADVERTENCIA ⚠️
 Este bot no tiene restriccion lo cual significa que todos lo pueden usar, la vercion pro esta en proceso
+No es codigo abierto
 
 ## 🚀 Características
 - 🤖 Convertir imagen a sticker
