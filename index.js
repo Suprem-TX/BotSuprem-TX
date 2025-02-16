@@ -265,7 +265,7 @@ client.on('message', async (message) => {
             }
     
             // Ruta o URL de la imagen que deseas enviar
-            const imagePath = '/root/SupremBot/img/welcome.png';  // Cambia esta ruta con la correcta
+            const imagePath = '/root/SupremBot/img/serv.png';  // Cambia esta ruta con la correcta
             const media = MessageMedia.fromFilePath(imagePath);
     
             // Envía el mensaje junto con la imagen
